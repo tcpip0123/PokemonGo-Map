@@ -1,0 +1,63 @@
+<html>
+
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="monRater.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- <div style="background-image: url('device-2016-08-04-022235.png'); z-index: 100; width: 100%; height: 50%; position: absolute; opacity: .4;">&nbsp;</div> -->
+    <!-- <img src="device-2016-08-04-022235.png" style="width: 100%; position: absolute; margin-top: -50px"> -->
+    <div id="arc_section">
+      <div id="svg_cont" style="z-index:1;">
+        <svg xmlns="http://www.w3.org/2000/svg" id="arc"></svg>
+      </div>
+    </div>
+
+    <div class="white_part">
+      <h3 class="text-left">Your Trainer Level: <span id="trainer_level_label"></span></h3>
+      <input type="range" min="1" max="40" value="1" id="trainer_level">
+    </div>
+
+    <div>
+      <div style="margin:10px 36px 0;z-index: 2;position: relative;">
+        <input type="range" min="1" max="6.5" step="0.5" value="1" id="pokemon_level">
+        <h3 style="text-align: center;color: white;font-family: 'texgyreadventorregular';font-size: 20px;">
+											Slide The Arc Into Position
+										</h3>
+        <p style="width: 100%; text-align: center; display: inline-block; font-family: 'texgyreadventorregular'; letter-spacing: 2px; color: #e4c049; margin: 0;font-size:14px;">ESTIMATED POKEMON LEVEL:
+          <span id="pokemon_level_label" style="font-size:22px;width:30px;display:inline-block;line-height: 12px;vertical-align: sub;"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="white_part" style="padding:10px;">
+      <h3>&nbsp;</h3>
+      
+
+      <div class="table" id="power_up">
+        <div>
+          <div id="power_up_label">
+            Need for Power Up
+            <br/>
+            <small>(increases 0.5 levels)</small>
+          </div>
+          <div id="stardust_label">
+            <span id="stardust"></span>
+            <br /> Stardust
+          </div>
+          <div id="candy_label">
+            <span id="candy"></span>
+            <br /> Candy
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://thesilphroad.com/js/monRater.data.js"></script>
+    <script src="index.js"></script>
+  </body>
+
+</html>
